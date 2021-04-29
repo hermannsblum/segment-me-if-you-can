@@ -15,9 +15,82 @@ title: Datasets
         </div>
 
         <div class="row">
+
+          <div class="col-md-6">
+            <h4 class="sub-title">RoadAnomaly21</h4>
+            <p><strong>Anomaly track:</strong>
+              general anomaly segmentation in full street scenes
+            </p>
+            <ul class="list-featured space-bottom-20">
+              <li>100 images with pixel-level annotations of resolution 2048x1024 and 1280x720</li>
+              <li>at least one anomalous object per image, e.g. animals and unknown vehicles</li>
+              <li>anomalies can appear anywhere in the image</li>
+              <li>anomalies widely differ in size (from 0.5% to 40% of the image)</li>
+              <li>images were collected from web resources and threfore depict a wide variety of environments</li>
+            </ul>
+            <br><br>
+          </div>
+
+          <div class="col-md-6">
+            <h4 class="sub-title">RoadObstacle21</h4>
+            <p><strong>Obstacle track:</strong>
+              obstacle segmentation with the road as region of interest
+            </p>
+            <ul class="list-featured space-bottom-20">
+              <li>327 images with pixel-level annotations of resolution 1920x1080</li>
+              <li>the obstacles in this dataset can be understood as anomaly objects as well</li>
+              <li>object types: e.g. stuffed toys, sleighs, tree stumps, ...</li>
+              <li>obstacles appear at different distances (one distance per image)</li>
+              <li>different road surfaces, lighting and weather conditions available</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="mb-60"></div>
+
+        <div class="row">
+
+          <div class="col-md-4">
+            <h4 class="sub-title">Labeling policy</h4>
+            <p>The pixel-level annotations of both datasets include three classes:</p>
+            <ol class="list-featured space-bottom-20">
+              <li>anomaly / obstacle</li>
+              <li>not anomaly / not obstacle</li>
+              <li>void</li>
+            </ol>
+            The 19 evaluation classes from <a href="https://www.cityscapes-dataset.com/" target="_blank">Cityscapes</a> serve as basis to judge whther an object is anomalous or not.
+            We assign image regions to the void class if they cannot be assigned to any of the Cityscapes classes and also do not belong to the objects / regions of interest, i.e. they are neither anomaly nor obstacle.
+            <br><br>
+          </div>
+
+          <div class="col-md-4">
+            <h4 class="sub-title">Anomaly example</h4>
+            <img src="./assets/images/elephant0006_blend.jpg" style="margin-bottom: 15px">
+            <div class="text-center">
+              Caption 1: The anomalous objects, in this example elephants, are highlighted in orange and additionally with green contours. The anomalous objects are allowed to appear anywhere in the image.
+            </div>
+            <br><br>
+          </div>
+          <div class="col-md-4">
+            <h4 class="sub-title">Obstacle example</h4>
+            <img src="./assets/images/one-way-street_dog_2_blend.jpg" style="margin-bottom: 15px">
+            <div class="text-center">
+              Caption 2: The obstacle, in this example a stuffed toy, is highlighted with green contours. The region of interest is given by the road (red contours), darkened regions are excluded from the evaluation.
+            </div>
+            <br><br>
+          </div>
+
+        </div>
+
+        <div class="page-header-title">
+          <h2 class="heading-title text-center">Download Images</h2>
+        </div>
+
+        <div class="row">
           <div class="col-md-12">
-            <div class="sub-title">
-              <h4>RoadAnomaly21</h4>
+            <div class="sub-title text-center">
+              <h4><u>RoadAnomaly21</u></h4>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
@@ -68,8 +141,8 @@ title: Datasets
 
         <div class="row">
           <div class="col-md-12">
-            <div class="sub-title">
-              <h4>RoadObstacle21</h4>
+            <div class="sub-title text-center">
+              <h4><u>RoadObstacle21</u></h4>
             </div>
           </div>
           <div class="col-md-4 col-sm-4 col-xs-12">
