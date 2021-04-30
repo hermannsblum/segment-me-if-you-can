@@ -38,33 +38,25 @@ canonical: https://heliumjk.github.io
     <div class="row">
       <div class="col-md-4 text-center">
         <span style="color: #EB586F;">
-          <a href="https://segmentmeifyoucan.com/datasets" target="_blank"><i class="fa fa-camera fa-5x"></i></a>
+          <a href="{{ BASE_PATH }}/datasets"><i class="fa fa-camera fa-5x"></i></a>
         </span>
         <div class="service-box service-center">
           <div class="service-content">
-            <h4><a href="https://segmentmeifyoucan.com/datasets" target="_blank">Real World Datasets</a></h4>
-            <p>
+            <h4><a href="{{ BASE_PATH }}/datasets">Real World Datasets</a></h4>
               Get some details about our datasets RoadAnomaly21 & RoadObstacle21 and our labeling policy.
-            </p>
-            <p>
-              You can download the images <a href="https://segmentmeifyoucan.com/datasets" target="_blank">here</a>.
-            </p>
+              You can download the images <a href="{{ BASE_PATH }}/datasets">here</a>.
           </div>
         </div>
       </div>
       <div class="col-md-4 text-center">
         <span style="color: #EB586F;">
-          <a href="https://segmentmeifyoucan.com/leaderboard" target="_blank"><i class="fa fa-trophy fa-5x"></i></a>
+          <a href="{{ BASE_PATH }}/leaderboard"><i class="fa fa-trophy fa-5x"></i></a>
         </span>
         <div class="service-box service-center">
           <div class="service-content">
-            <h4><a href="https://segmentmeifyoucan.com/leaderboard" target="_blank">Public Leaderboard</a></h4>
-            <p>
+            <h4><a href="{{ BASE_PATH }}/leaderboard">Public Leaderboard</a></h4>
               Get an overview about already evaluated methods, listed in the public leaderboard.
-            </p>
-            <p>
-               Beat the highscore if you can!
-            </p>
+              Beat the highscore if you can!
           </div>
         </div>
       </div>
@@ -75,9 +67,7 @@ canonical: https://heliumjk.github.io
         <div class="service-box service-center">
           <div class="service-content">
             <h4><a href="#">Benchmark Suite</a></h4>
-            <p>
-              Analyse your method in our benchmark suite. We provide established pixel-wise as well as recent component-wise performance metrics.
-            </p>
+              Analyze your method in our benchmark suite. We provide established pixel-wise as well as recent component-wise performance metrics.
           </div>
         </div>
       </div>
@@ -98,42 +88,19 @@ canonical: https://heliumjk.github.io
           Our benchmark addresses two tasks: Anomalous object segmentation, which considers any previously-unseen object category;
           and road obstacle segmentation, which focuses on any object on the road, may it be known or unknown.
           We provide two corresponding datasets together with a test suite, performing an in-depth method analysis.
-
-<!--          State-of-the-art semantic or instance segmentation deep neural networks (DNNs) are usually trained on a closed set of semantic classes. -->
-<!--          As such, they are ill-equipped to handle previously-unseen objects.-->
-<!--          However, detecting and localizing such objects is crucial for safety-critical applications such as perception for automated driving,-->
-<!--          especially if they appear on the road ahead. While some methods have tackled the tasks of anomalous or out-of-distribution object segmentation,-->
-<!--          progress remains slow, in large part due to the lack of solid benchmarks; existing datasets either consist of synthetic data, or suffer from label inconsistencies.-->
-<!--          In this paper, we bridge this gap by introducing the ``SegmentMeIfYouCan'' benchmark. Our benchmark addresses two tasks: Anomalous object segmentation,-->
-<!--          which considers any previously-unseen object category; and road obstacle segmentation, which focuses on any object on the road, may it be known or unknown.-->
-<!--          We provide two corresponding datasets together with a test suite performing an in-depth method analysis, considering both established pixel-wise performance metrics-->
-<!--          and recent component-wise ones, which are insensitive to object sizes. We empirically evaluate multiple state-of-the-art baseline methods,-->
-<!--          including several specifically designed for anomaly / obstacle segmentation, on our datasets as well as on public ones, using our benchmark suite.-->
-<!--          The anomaly and obstacle segmentation results show that our datasets contribute to the diversity and challengingness of both dataset landscapes.</p>-->
     </div>
-    <div class="col-md-3 text-center image-link" style="padding: 0 0 0 50px">
-        <a href="https://segmentmeifyoucan.com/datasets" target="_blank"><img src="{{ BASE_PATH }}/assets/images/leopard0000_overlay.jpg"  alt="" style="Padding: 15px;max-width: 150%;max-height:175px;height: auto;width: auto"></a>
-        <a href="https://arxiv.org/pdf/2012.06575.pdf" target="_blank"><img src="{{ BASE_PATH }}/assets/images/leopard0000_uncertainty_max_entropy.png" alt="" style="Padding: 15px;max-width: 150%;max-height:175px;height: auto;width: auto"></a>
-    </div>
-    <div class="col-md-3 text-center image-link" style="padding: 0 0 0 50px">
-        <a href="https://arxiv.org/pdf/2103.05445.pdf" target="_blank"><img src="{{ BASE_PATH }}/assets/images/leopard0000_uncertainty_synboost.png" alt="" style="Padding: 15px;max-width: 150%;max-height:175px;height: auto;width: auto"></a>
-        <a href="https://arxiv.org/pdf/1904.07595.pdf" target="_blank"><img src="{{ BASE_PATH }}/assets/images/leopard0000_uncertainty_image_resynthesis.png" alt="" style="Padding: 15px;max-width: 150%;max-height:175px;height: auto;width: auto"></a>
+    <div class="col-md-6 text-center" style="padding: 0 0 0 50px">
+      <a><img src="{{ BASE_PATH }}/assets/images/leopard0000_overlay.jpg" alt="" style="padding-top: 10px; max-width: 48%; height: auto; width: auto"></a>
+      <a><img src="{{ BASE_PATH }}/assets/images/leopard0000_uncertainty_max_entropy.jpg" alt="" style="padding-top: 10px; max-width: 48%; height: auto; width: auto"></a>
+      <a><img src="{{ BASE_PATH }}/assets/images/leopard0000_uncertainty_synboost.jpg" alt="" style="padding-top: 10px; margin-bottom: 15px; max-width: 48%; height: auto; width: auto"></a>
+      <a><img src="{{ BASE_PATH }}/assets/images/leopard0000_uncertainty_image_resynthesis.jpg" alt="" style="padding-top: 10px; margin-bottom: 15px; max-width: 48%; height: auto; width: auto"></a>
+      <div class="text-center">
+        Figure: Qualitative comparison of the anomaly scores produced by different methods for one example from RoadAnomaly21.
+      </div>
     </div>
     </div>
   </div>
 </div>
-
-<!--<style>-->
-<!--  img {-->
-<!--    Padding: 25px;-->
-<!--    max-width: 100%;-->
-<!--    max-height: 120px;-->
-<!--    height: auto;-->
-<!--    width: auto-->
-<!--  }-->
-<!--</style>-->
-
-
 
     <div class="container">
       <div class="row">
