@@ -1,0 +1,75 @@
+---
+layout: default
+title: Submit
+---
+{% include JB/setup %}
+
+    <link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
+    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
+    <script src="//codemirror.net/mode/python/python.js"></script>
+
+    <div id="content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-12">
+            <div class="page-header-title">
+              <h2 class="heading-title text-center">Submit Your Method</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h4 class="sub-title">Submission form coming soon.</h4>
+        </div>
+        <div class="mb-60"></div>
+
+        <p class="lead">In order to evaluate your method, we require pixel-wise anomaly / obstacle scores, where higher values correspond to anomaly / obstacle prediction.
+          Our benchmark <a href="#">code</a> provides an inference pipeline for that.</p><br>
+
+        <h4>Example inference script for a dummy method:</h4>
+
+<pre><code id="python_code-2">import numpy as np
+from tqdm import tqdm
+import cv2 as cv
+from road_anomaly_benchmark.evaluation import Evaluation
+
+def my_dummy_method(image):
+    """ Very naive method: return color saturation """
+    image_hsv = cv.cvtColor(image, cv.COLOR_RGB2HSV_FULL)
+    scores = image_hsv[:, :, 1].astype(np.float) * (1./255.)
+    return scores
+
+def main():
+    ev = Evaluation(method_name = 'Dummy', dataset_name = 'AnomalyTrack-test')
+    for frame in tqdm(ev.get_dataset()):
+        anomaly_p = my_dummy_method(frame.image)
+        ev.save_output(frame, anomaly_p)
+    ev.wait_to_finish_saving()
+
+if __name__ == '__main__':
+    main()</code></pre>
+
+        <p class="lead">The output scores will be stored by default as <i>hdf5</i> files in the directory <span style="background-color: #E8E8E8">./outputs/anomaly_p/</span>
+        (sub-directory <span style="background-color: #E8E8E8">Dummy/RoadAnomalyTrack-test</span> for the example script).
+        Replace the function <span style="background-color: #E8E8E8">my_dummy_method</span> with your method and change the <span style="background-color: #E8E8E8">method_name</span> accordingly.
+        For the obstacle track, change <span style="background-color: #E8E8E8">dataset_name</span> to <span style="background-color: #E8E8E8">ObstacleTrack-all</span>.</p>
+
+        <script type="text/javascript">
+            window.onload = function(){
+                var codeElement = document.getElementById('python_code-2');
+                codeElement.classList.add( 'cm-s-default' );
+                var code = codeElement.innerText;
+                codeElement.innerHTML = "";
+                CodeMirror.runMode(
+                  code,
+                  'python',
+                  codeElement
+                );
+            };
+        </script>
+
+      </div>
+    </div>
+    <!-- Content Area End -->
+<!--    <div class="text-center">Add content here</a> </div>-->
