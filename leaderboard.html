@@ -13,9 +13,140 @@ title: Leaderboard
             </div>
 
             <div class="text-center">
-              <h4 class="sub-title">Coming soon.</h4>
+              <h4 class="sub-title">Anomaly Track</h4>
             </div>
 
+            <div id="results-table"></div>
+
+            <script>
+
+              var fpr95 = '<svg height="1.2em" style="margin-top: 2px" viewBox="-2 0 120 52" version="1.1"><text style="font-weight:bold;font-size:40px;line-height:125%;letter-spacing:0px;fill:#363636;fill-opacity:1;" x="-4.5" y="38">FPR</text><text style="font-weight:bold;font-size:30px;line-height:125%;letter-spacing:0px;fill:#363636;fill-opacity:1;" x="78.6" y="50.5">95</text></svg>';
+              var black_cross = '<svg enable-background="new 0 0 24 24" height="14" width="14" viewBox="0 0 24 24" xml:space="preserve"><path fill="#222222" d="M22.245,4.015c0.313,0.313,0.313,0.826,0,1.139l-6.276,6.27c-0.313,0.312-0.313,0.826,0,1.14l6.273,6.272  c0.313,0.313,0.313,0.826,0,1.14l-2.285,2.277c-0.314,0.312-0.828,0.312-1.142,0l-6.271-6.271c-0.313-0.313-0.828-0.313-1.141,0  l-6.276,6.267c-0.313,0.313-0.828,0.313-1.141,0l-2.282-2.28c-0.313-0.313-0.313-0.826,0-1.14l6.278-6.269  c0.313-0.312,0.313-0.826,0-1.14L1.709,5.147c-0.314-0.313-0.314-0.827,0-1.14l2.284-2.278C4.308,1.417,4.821,1.417,5.135,1.73  L11.405,8c0.314,0.314,0.828,0.314,1.141,0.001l6.276-6.267c0.312-0.312,0.826-0.312,1.141,0L22.245,4.015z"></path></svg>';
+              var black_tick = '<svg enable-background="new 0 0 24 24" height="14" width="14" viewBox="0 0 24 24" xml:space="preserve"><path fill="#222222" clip-rule="evenodd" d="M21.652,3.211c-0.293-0.295-0.77-0.295-1.061,0L9.41,14.34  c-0.293,0.297-0.771,0.297-1.062,0L3.449,9.351C3.304,9.203,3.114,9.13,2.923,9.129C2.73,9.128,2.534,9.201,2.387,9.351  l-2.165,1.946C0.078,11.445,0,11.63,0,11.823c0,0.194,0.078,0.397,0.223,0.544l4.94,5.184c0.292,0.296,0.771,0.776,1.062,1.07  l2.124,2.141c0.292,0.293,0.769,0.293,1.062,0l14.366-14.34c0.293-0.294,0.293-0.777,0-1.071L21.652,3.211z" fill-rule="evenodd"></path></svg>';
+
+              //create Tabulator on DOM element with id "example-table"
+              var table = new Tabulator("#results-table", {
+                //height:205, // set height of table (in CSS or here), this enables the Virtual DOM and improves render speed dramatically (can be any valid css height value)
+                //layout:"fitColumns", //fit columns to width of table (optional)
+                //groupBy: "method",
+                columns: [ //Define Table Columns
+                  //{title:"Method", field:"method", width:150},
+                  { title: "Method", field: "method", width: 150, headerSort: false },
+                  {
+                    title: 'OoD Data',
+                    field: "requires_ood_data",
+                    align: "center",
+                    formatter: 'lookup',
+                    formatterParams: { 'FALSE': black_cross, 'TRUE': black_tick },
+                    headerSort: false
+                  },
+                  {//column group
+                    title: "Pixel Level",
+                    columns: [
+                      {
+                        title: "AUPR",
+                        field: "AnomalyTrack-test-PixBinaryClass-area_PRC",
+                        align: "right",
+                        cssClass: "column-group-left",
+                        sorter: "number",
+                        sorterParams: { alignEmptyValues: 'bottom' },
+                        formatter: function (cell, formatterParams, onRendered) {
+                          return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
+                        },
+                        headerSortStartingDir: "desc"
+                      },
+                      {
+                        title: fpr95,
+                        field: "AnomalyTrack-test-PixBinaryClass-tpr95_fpr",
+                        align: "right",
+                        sorter: "number",
+                        sorterParams: { alignEmptyValues: 'bottom' },
+                        formatter: function (cell, formatterParams, onRendered) {
+                          return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
+                        },
+                        headerSortStartingDir: "asc"
+                      },
+                      {
+                        title: "best F1",
+                        field: "AnomalyTrack-test-PixBinaryClass-best_f1",
+                        align: "right",
+                        sorter: "number",
+                        sorterParams: { alignEmptyValues: 'bottom' },
+                        formatter: function (cell, formatterParams, onRendered) {
+                          return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
+                        },
+                        headerSortStartingDir: "desc"
+                      },
+                    ],
+                  },
+                  {//column group
+                    title: "Component Level",
+                    columns: [
+                      {
+                        title: "sIoU gt",
+                        field: "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt",
+                        align: "right",
+                        cssClass: "column-group-left",
+                        sorter: "number",
+                        sorterParams: { alignEmptyValues: 'bottom' },
+                        formatter: function (cell, formatterParams, onRendered) {
+                          return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
+                        },
+                        headerSortStartingDir: "desc"
+                      },
+                      {
+                        title: "sIoU pred",
+                        field: "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_pred",
+                        align: "right",
+                        sorter: "number",
+                        sorterParams: { alignEmptyValues: 'bottom' },
+                        formatter: function (cell, formatterParams, onRendered) {
+                          return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
+                        },
+                        headerSortStartingDir: "desc"
+                      },
+                      {
+                        title: "mean F1",
+                        field: "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean",
+                        align: "right",
+                        sorter: "number",
+                        sorterParams: { alignEmptyValues: 'bottom' },
+                        formatter: function (cell, formatterParams, onRendered) {
+                          return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
+                        },
+                        headerSortStartingDir: "desc"
+                      },
+                    ],
+                  },
+                ],
+                //initialSort: [{ column: "LaF_AP", dir: "desc" }],
+                groupToggleElement: false, //no toggeling
+                groupHeader: function (value, count, data, group) {
+                  //value - the value all members of this group share
+                  //count - the number of rows in this group
+                  //data - an array of all the row data objects in this group
+                  //group - the group component for the group
+                  var return_str = '<span class="method">' + value + '</span>';
+                  var found_paper = false;
+                  data.forEach(function (item) {
+                    if (!found_paper && item.paper != 'x') {
+                      if (item.paper_link)
+                        return_str = return_str + '<a class="method method-paper" href="' + item.paper_link + '" target="_blank">' + item.paper + '</a>';
+                      else
+                        return_str = return_str + '</span><span class="method method-paper">' + item.paper + '</span>';
+                      found_paper = true;
+                    }
+                  });
+                  return return_str;
+                },
+              });
+
+              fetch('/assets/leaderboard.json').then(function (response) {
+                response.json().then(function (data) {
+                  table.setData(data['leaderboard']);
+                });
+              });
+              </script>
             <!-- Table Style 1 -->
 <!--            <div class="table-style1">-->
 <!--              <div class="sub-title">-->
