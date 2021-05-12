@@ -92,17 +92,6 @@ title: Leaderboard
                         },
                         headerSortStartingDir: "asc"
                       },
-                      {
-                        title: "best F1",
-                        field: "AnomalyTrack-test-PixBinaryClass-best_f1",
-                        align: "right",
-                        sorter: "number",
-                        sorterParams: { alignEmptyValues: 'bottom' },
-                        formatter: function (cell, formatterParams, onRendered) {
-                          return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
-                        },
-                        headerSortStartingDir: "desc"
-                      },
                     ],
                   },
                   {//column group
@@ -202,17 +191,6 @@ title: Leaderboard
                             return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
                           },
                           headerSortStartingDir: "asc"
-                        },
-                        {
-                          title: "best F1",
-                          field: "ObstacleTrack-test-PixBinaryClass-best_f1",
-                          align: "right",
-                          sorter: "number",
-                          sorterParams: { alignEmptyValues: 'bottom' },
-                          formatter: function (cell, formatterParams, onRendered) {
-                            return (100 * cell.getValue()).toFixed(2) + "%"; //return the contents of the cell;
-                          },
-                          headerSortStartingDir: "desc"
                         },
                       ],
                     },
