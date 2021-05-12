@@ -262,7 +262,8 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.4851047716,
       "method": "Maximized Entropy",
       "requires_ood": true,
-      "paper": "https://arxiv.org/abs/2012.06575"
+      "paper": "https://arxiv.org/abs/2012.06575",
+      "code": "https://github.com/robin-chan/meta-ood"
     },
     {
       "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.221223038,
