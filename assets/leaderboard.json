@@ -99,7 +99,8 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.2895879371,
       "method": "Maximized Entropy",
       "requires_ood": true,
-      "paper": "https://arxiv.org/abs/2012.06575"
+      "paper": "https://arxiv.org/abs/2012.06575",
+      "code": "https://github.com/robin-chan/meta-ood"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.3335474443,
