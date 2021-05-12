@@ -1,5 +1,5 @@
 {
-  "leaderboard": [
+  "anomaly_track": [
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.5660473075,
       "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.6225528775,
@@ -16,7 +16,10 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1388,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0216216216,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.1021908575,
-      "method": "SynBoost"
+      "method": "SynBoost",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2103.05445",
+      "code": "https://github.com/giandbt/synboost"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.3760029134,
@@ -34,7 +37,9 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1911,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0128205128,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.078977081,
-      "method": "mindensity"
+      "method": "min density",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/1904.03215"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.3658880148,
@@ -52,7 +57,9 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1067,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0134831461,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0650728033,
-      "method": "voidclassifier"
+      "method": "void classifier",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/1904.03215"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.2910264814,
@@ -70,7 +77,92 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1682,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0082093381,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0440904808,
-      "method": "dropout"
+      "method": "MC Dropout",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/1811.12709"
+    }
+  ],
+  "obstacle_track": [
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7134244034,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0315425253,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.7077196994,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.442784899,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred": 0.275479139,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 136,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 388,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.4902723735,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 185,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 440,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.3937924345,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 283,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 538,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.203685742,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.375672594,
+      "method": "SynBoost",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2103.05445",
+      "code": "https://github.com/giandbt/synboost"
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.1044476504,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.4154404213,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.2329533854,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.0633711068,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred": 0.0567485591,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 350,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 403,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.0916767189,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 365,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 421,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.0552884615,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 381,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 435,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.0168674699,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0540815614,
+      "method": "void classifier",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/1904.03215"
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.0488034342,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.5031126118,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.0898299621,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.0549090474,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred": 0.0093755675,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 356,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 2322,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.0233406273,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 375,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 2339,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.0094890511,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 387,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 2351,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.000729927,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0104799777,
+      "method": "MC Dropout",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/1811.12709"
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.0082463116,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.4638184192,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.0204553808,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.3563662306,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred": 0.0131837234,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 145,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 11166,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.0411969145,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 244,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 11271,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.0244005761,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 370,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 11393,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.003051106,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0230938716,
+      "method": "min density",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/1904.03215"
     }
   ]
 }
