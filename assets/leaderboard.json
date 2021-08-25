@@ -37,7 +37,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1884,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0111214087,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0790295018,
-      "method": "min density",
+      "method": "Embedding Density",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1904.03215"
     },
@@ -57,7 +57,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1066,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0134629768,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0648554246,
-      "method": "void classifier",
+      "method": "Void Classifier",
       "requires_ood": true,
       "paper": "https://arxiv.org/abs/1904.03215"
     },
@@ -118,7 +118,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1191,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0109514031,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0515039146,
-      "method": "Odin",
+      "method": "ODIN",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1706.02690"
     },
@@ -140,7 +140,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0536938561,
       "method": "Maximum Softmax",
       "requires_ood": false,
-      "paper": "https://arxiv.org/abs/1610.02136",
+      "paper": "https://arxiv.org/abs/1610.02136"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.200391211,
@@ -178,7 +178,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1364,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0374170187,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.1251231818,
-      "method": "image resynthesis",
+      "method": "Image Resynthesis",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1904.07595",
       "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
@@ -222,7 +222,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 435,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.0168674699,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0540815614,
-      "method": "void classifier",
+      "method": "Void Classifier",
       "requires_ood": true,
       "paper": "https://arxiv.org/abs/1904.03215"
     },
@@ -262,7 +262,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 11393,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.003051106,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0230938716,
-      "method": "min density",
+      "method": "Embedding Density",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1904.03215"
     },
@@ -303,7 +303,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 1324,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.032183908,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0937028775,
-      "method": "Odin",
+      "method": "ODIN",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1706.02690"
     },
@@ -363,7 +363,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 847,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.2140274765,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3601471042,
-      "method": "road inpainting",
+      "method": "Road Inpainting",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/2012.13633"
     },
@@ -383,7 +383,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 978,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.0202898551,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0838302006,
-      "method": "image resynthesis",
+      "method": "Image Resynthesis",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1904.07595",
       "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
