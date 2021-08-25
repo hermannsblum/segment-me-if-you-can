@@ -140,7 +140,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0536938561,
       "method": "Maximum Softmax",
       "requires_ood": false,
-      "paper": "https://arxiv.org/abs/1610.02136"
+      "paper": "https://arxiv.org/abs/1610.02136",
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.200391211,
@@ -161,6 +161,27 @@
       "method": "Mahalanobis",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1807.03888"
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.5228026853,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.2593085946,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.6052224648,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.3967537028,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_pred": 0.0704207146,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 94,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 1242,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.2009569378,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 153,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 1287,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.1314837153,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 231,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1364,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0374170187,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.1251231818,
+      "method": "image resynthesis",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/1904.07595",
+      "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
     }
   ],
   "obstacle_track": [
@@ -325,6 +346,47 @@
       "method": "Maximum Softmax",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1610.02136"
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.5413735494,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.4711817056,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.6743423213,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.5763760938,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred": 0.2339513838,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 79,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 674,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.4507658643,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 131,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 731,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.3735465116,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 240,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 847,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.2140274765,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3601471042,
+      "method": "road inpainting",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/2012.13633"
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.3771244784,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0469740788,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.3877740015,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.1660675787,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred": 0.0677605656,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 286,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 895,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.1472924188,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 334,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 940,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.0781476122,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 374,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 978,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.0202898551,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.0838302006,
+      "method": "image resynthesis",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/1904.07595",
+      "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
     }
   ]
 }
