@@ -21,6 +21,15 @@ title: Submit
 
         <div class="text-center">
           <h4 class="sub-title">Submission form coming soon.</h4>
+            If you like to submit a method, please get in touch with us via
+            <script>
+              var part1 = "submission";
+              var part2 = Math.pow(2,6);
+              var part3 = String.fromCharCode(part2);
+              var part4 = "segmentmeifyoucan.com";
+              var part5 = part1 + String.fromCharCode(part2) + part4;
+                document.write("<a href= " + "mai" + "lto" + ":" + part5 + " >" + part5 + "</a>.");
+            </script>
         </div>
         <div class="mb-60"></div>
 
@@ -50,8 +59,8 @@ def main():
 if __name__ == '__main__':
     main()</code></pre>
 
-        <p class="lead">The output scores will be stored by default as <i>hdf5</i> files in the directory <span style="background-color: #E8E8E8">./outputs/anomaly_p/</span>
-        (sub-directory <span style="background-color: #E8E8E8">Dummy/RoadAnomalyTrack-test</span> for the example script).
+        <p class="lead">The output scores will be stored as <i>.hdf5</i> files by default in the directory <span style="background-color: #E8E8E8">./outputs/anomaly_p/</span>
+        (sub-directory <span style="background-color: #E8E8E8">Dummy/AnomalyTrack-all</span> for the example script).
         Replace the function <span style="background-color: #E8E8E8">my_dummy_method</span> with your method and change the <span style="background-color: #E8E8E8">method_name</span> accordingly.
         For the obstacle track, change <span style="background-color: #E8E8E8">dataset_name</span> to <span style="background-color: #E8E8E8">ObstacleTrack-all</span>.</p>
 
