@@ -551,6 +551,47 @@
       "method": "Maximum Softmax",
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1610.02136"
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.829284961,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.3574730652,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.7906807054,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.4921443144,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_pred": 0.4458842054,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 631,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 816,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.5983902304,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 749,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 944,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.5314143371,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 958,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 1163,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.4145735578,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.5225068492,
+      "method": "Road Inpainting",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/2012.13633"
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.5708022859,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0882041631,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.5508374846,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.2716472763,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_pred": 0.1520708234,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 947,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 2379,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.3142268041,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 1232,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 2667,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.1965794354,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 1560,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 2989,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.0614813287,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.1916888007,
+      "method": "Image Resynthesis",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/1904.07595",
+      "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
     }
   ]
 }
