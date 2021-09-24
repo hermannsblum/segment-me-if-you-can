@@ -182,6 +182,25 @@
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1904.07595",
       "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.4977853808,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.4874847999,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.5412036261,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.2927258658,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_pred": 0.0665619821,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 132,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 975,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.1901975128,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 195,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 1023,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.099112426,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 248,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1079,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0206642066,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0979822061,
+      "method": "Anonymous Submission",
+      "requires_ood": false
     }
   ],
   "obstacle_track": [
@@ -387,6 +406,25 @@
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1904.07595",
       "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.8079645146,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0194037492,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.762965524,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.422264306,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred": 0.2852429563,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 159,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 354,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.4716786818,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 189,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 387,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.40862423,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 273,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 472,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.2358974359,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3849164831,
+      "method": "Anonymous Submission",
+      "requires_ood": false
     }
   ],
   "laf_no_known": [
@@ -592,6 +630,25 @@
       "requires_ood": false,
       "paper": "https://arxiv.org/abs/1904.07595",
       "code": "https://github.com/cvlab-epfl/detecting-the-unexpected"
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.7944154646,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0202158874,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.755284242,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.4992264213,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_pred": 0.3180312147,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 488,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 1469,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.555126165,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 720,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 1706,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.449137148,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 1155,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 2144,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.2514181983,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.433059921,
+      "method": "Anonymous Submission",
+      "requires_ood": false
     }
   ]
 }
