@@ -24,7 +24,7 @@ title: Leaderboard
               <li><strong>AUPR :</strong> pixel-wise Area Under Precision Recall curve</li>
               <li><strong>FPR<sub>95</sub> :</strong> pixel-wise False Positive Rate at a true positive rate of 95%</li>
               <li><strong>sIoU gt :</strong> adjusted Intersection over Union averaged over all ground truth segmentation components</li>
-              <li><strong>sIoU pred :</strong> adjusted Intersection over Union averaged over all predicted segmentation components</li>
+              <li><strong>PPV :</strong> precision averaged over all predicted segmentation components</li>
               <li><strong>mean F1 :</strong> components-wise F1-score averaged over different detection thresholds</li>
             </ul>
             For a more detailed explanation of the metrics, we refer to our <a href="https://arxiv.org/abs/2104.14812" target="_blank">paper</a>.
@@ -151,8 +151,8 @@ title: Leaderboard
                         headerSortStartingDir: "desc"
                       },
                       {
-                        title: "sIoU pred",
-                        field: "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_pred",
+                        title: "PPV",
+                        field: "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred",
                         align: "right",
                         sorter: "number",
                         sorterParams: { alignEmptyValues: 'bottom' },
@@ -251,8 +251,8 @@ title: Leaderboard
                           headerSortStartingDir: "desc"
                         },
                         {
-                          title: "sIoU pred",
-                          field: "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_pred",
+                          title: "PPV",
+                          field: "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred",
                           align: "right",
                           sorter: "number",
                           sorterParams: { alignEmptyValues: 'bottom' },
@@ -351,8 +351,8 @@ title: Leaderboard
                           headerSortStartingDir: "desc"
                         },
                         {
-                          title: "sIoU pred",
-                          field: "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_pred",
+                          title: "PPV",
+                          field: "LostAndFound-testNoKnown-SegEval-ObstacleTrack-prec_pred",
                           align: "right",
                           sorter: "number",
                           sorterParams: { alignEmptyValues: 'bottom' },
