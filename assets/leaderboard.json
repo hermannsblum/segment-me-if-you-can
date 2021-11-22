@@ -219,7 +219,9 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0365296804,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.1366384172,
       "method": "JSRNet",
-      "requires_ood": false
+      "requires_ood": false,
+      "paper": "https://openaccess.thecvf.com/content/ICCV2021/html/Vojir_Road_Anomaly_Detection_by_Partial_Image_Reconstruction_With_Segmentation_Coupling_ICCV_2021_paper.html",
+      "code": "https://github.com/vojirt/JSRNet"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.1766077673,
@@ -481,7 +483,9 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.0218671152,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.1102331593,
       "method": "JSRNet",
-      "requires_ood": false
+      "requires_ood": false,
+      "paper": "https://openaccess.thecvf.com/content/ICCV2021/html/Vojir_Road_Anomaly_Detection_by_Partial_Image_Reconstruction_With_Segmentation_Coupling_ICCV_2021_paper.html",
+      "code": "https://github.com/vojirt/JSRNet"
     },
     {
       "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.0105733832,
@@ -743,7 +747,9 @@
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.2096334444,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.3597498049,
       "method": "JSRNet",
-      "requires_ood": false
+      "requires_ood": false,
+      "paper": "https://openaccess.thecvf.com/content/ICCV2021/html/Vojir_Road_Anomaly_Detection_by_Partial_Image_Reconstruction_With_Segmentation_Coupling_ICCV_2021_paper.html",
+      "code": "https://github.com/vojirt/JSRNet"
     },
     {
       "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.0288514961,
