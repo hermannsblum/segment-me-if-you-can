@@ -218,7 +218,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 383,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0365296804,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.1366384172,
-      "method": "JSRNet-chck2",
+      "method": "JSRNet",
       "requires_ood": false
     },
     {
@@ -480,7 +480,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 788,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.0218671152,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.1102331593,
-      "method": "JSRNet-chck2",
+      "method": "JSRNet",
       "requires_ood": false
     },
     {
@@ -742,7 +742,7 @@
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 1246,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.2096334444,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.3597498049,
-      "method": "JSRNet-chck2",
+      "method": "JSRNet",
       "requires_ood": false
     },
     {
