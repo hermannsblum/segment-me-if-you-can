@@ -199,7 +199,8 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 936,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0344544709,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.1489138776,
-      "method": "Anonymous Submission",
+      "method": "NFlowJS",
+      "paper": "https://arxiv.org/abs/2112.12833",
       "requires_ood": false
     },
     {
@@ -464,7 +465,8 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 276,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.2996158771,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.5035631646,
-      "method": "Anonymous Submission",
+      "method": "NFlowJS",
+      "paper": "https://arxiv.org/abs/2112.12833",
       "requires_ood": false
     },
     {
@@ -729,7 +731,8 @@
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 795,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.4703726329,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.6175091714,
-      "method": "Anonymous Submission",
+      "method": "NFlowJS",
+      "paper": "https://arxiv.org/abs/2112.12833",
       "requires_ood": false
     },
     {
