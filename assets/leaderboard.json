@@ -544,7 +544,46 @@
        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 289,
        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.208994709,
        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.5071808692,
-       "method": "Anonymous"}
+       "method": "Anonymous"
+      },
+      {
+        "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.8739512868,
+        "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.002829171,
+        "ObstacleTrack-test-PixBinaryClass-best_f1": 0.792134883,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4675491888,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.46596439,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 106,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 208,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.6423690205,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 159,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 233,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.5388235294,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 327,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 387,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1459330144,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.4756870174,
+        "method": "RAOS",
+        "requires_ood": true
+      },
+      {
+        "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7966752884,
+        "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0081347992,
+        "ObstacleTrack-test-PixBinaryClass-best_f1": 0.7197069371,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4241650964,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.3258406516,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 139,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 504,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.4364592463,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 195,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 524,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.349321267,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 314,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 626,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1360294118,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3270176186,
+        "method": "RAOS",
+        "requires_ood": false
+      }
   ],
   "laf_no_known": [
     { 
