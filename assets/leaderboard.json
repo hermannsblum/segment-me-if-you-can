@@ -562,7 +562,7 @@
         "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 387,
         "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1459330144,
         "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.4756870174,
-        "method": "RAOS",
+        "method": "RAOS (training)",
         "requires_ood": true
       },
       {
@@ -581,7 +581,7 @@
         "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 626,
         "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1360294118,
         "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3270176186,
-        "method": "RAOS",
+        "method": "RAOS (training free)",
         "requires_ood": false
       }
   ],
@@ -867,6 +867,44 @@
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.3068078669,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.5232533372,
       "method": "Anonymous"
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.8981224892,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0095281386,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.8317398073,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.5305687077,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-prec_pred": 0.5786246126,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 497,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 634,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.6818565401,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 631,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 678,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.6222222222,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 989,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 839,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.4406364749,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.6020880864,
+      "method": "RAOS (training)",
+      "requires_ood": true
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.8112857914,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0323378026,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.7522473182,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.5353798893,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-prec_pred": 0.4620341534,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 422,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 1221,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.6103865307,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 586,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 1289,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.5450133463,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 1133,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 1653,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.2925342814,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.5063659194,
+      "method": "RAOS (training free)",
+      "requires_ood": true
     }
   ]
 }
