@@ -260,7 +260,10 @@
        "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 642,
        "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.1663286004,
        "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.3108403896,
-       "method": "Anonymous"
+       "method": "DenseHybrid ",
+       "requires_ood": true,
+       "paper": "https://arxiv.org/pdf/2207.02606.pdf",
+       "code": "https://github.com/matejgrcic/DenseHybrid"
       }
   ],
   "obstacle_track": [
@@ -544,7 +547,10 @@
        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 289,
        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.208994709,
        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.5071808692,
-       "method": "Anonymous"
+       "method": "DenseHybrid ",
+       "requires_ood": true,
+       "paper": "https://arxiv.org/pdf/2207.02606.pdf",
+       "code": "https://github.com/matejgrcic/DenseHybrid"
       },
       {
         "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.8739512868,
@@ -866,7 +872,10 @@
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 1089,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.3068078669,
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.5232533372,
-      "method": "Anonymous"
+      "method": "DenseHybrid ",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/pdf/2207.02606.pdf",
+      "code": "https://github.com/matejgrcic/DenseHybrid"
     },
     {
       "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.8981224892,
