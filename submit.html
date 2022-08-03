@@ -4,9 +4,9 @@ title: Submit
 ---
 {% include JB/setup %}
 
-    <link rel="stylesheet" href="//codemirror.net/lib/codemirror.css">
-    <script src="//codemirror.net/addon/runmode/runmode-standalone.js"></script>
-    <script src="//codemirror.net/mode/python/python.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/lib/codemirror.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/addon/runmode/runmode-standalone.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/codemirror@5.61.0/mode/python/python.min.js"></script>
 
     <div id="content">
       <div class="container">
@@ -20,8 +20,8 @@ title: Submit
         </div>
 
         <div class="text-center">
-          <h4 class="sub-title">Submission form coming soon.</h4>
-            If you like to submit a method, please get in touch with us via
+            <p>
+              If you like to submit a method, please get in touch with us via
             <script>
               var part1 = "submission";
               var part2 = Math.pow(2,6);
@@ -30,15 +30,17 @@ title: Submit
               var part5 = part1 + String.fromCharCode(part2) + part4;
                 document.write("<a href= " + "mai" + "lto" + ":" + part5 + " >" + part5 + "</a>.");
             </script>
+            </p>
         </div>
         <div class="mb-60"></div>
 
         <p class="lead">In order to evaluate your method, we require pixel-wise anomaly / obstacle scores, where higher values correspond to anomaly / obstacle prediction.
-          Our benchmark <a href="https://github.com/adynathos/road-anomaly-benchmark" target="_blank">code</a> provides an inference pipeline for that.</p><br>
+          Our benchmark <a href="https://github.com/adynathos/road-anomaly-benchmark" target="_blank">code</a> provides an inference pipeline for that. Then, please send us a download link (via eg. google drive, dropbox, ...) for the computed score files.</p><br>
 
         <h4>Example inference script for a dummy method:</h4>
 
-<pre><code id="python_code-2">import numpy as np
+
+    <pre><code id="python_code">
 from tqdm import tqdm
 import cv2 as cv
 from road_anomaly_benchmark.evaluation import Evaluation
@@ -57,7 +59,24 @@ def main():
     ev.wait_to_finish_saving()
 
 if __name__ == '__main__':
-    main()</code></pre>
+    main()
+    </code></pre>
+      <script type="text/javascript">
+          window.onload = function(){
+              var codeElement = document.getElementById('python_code');
+              // Add code mirror class for coloring (default is the theme)
+              codeElement.classList.add( 'cm-s-default' );
+              var code = codeElement.innerText;
+  
+              codeElement.innerHTML = "";
+  
+              CodeMirror.runMode(
+                code,
+                'python',
+                codeElement
+              );
+          };
+      </script>
 
         <p class="lead">The output scores will be stored as <i>.hdf5</i> files by default in the directory <span style="background-color: #E8E8E8">./outputs/anomaly_p/</span>
         (sub-directory <span style="background-color: #E8E8E8">Dummy/AnomalyTrack-all</span> for the example script).
