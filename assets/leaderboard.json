@@ -281,8 +281,10 @@
         "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 209,
         "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.2934782609,
         "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.450771497,
-        "method": "Anonymous Submission",
-        "requires_ood": true
+        "method": "ObsNet",
+        "requires_ood": false,
+        "paper": "https://arxiv.org/pdf/2108.01634.pdf",
+        "code": "https://github.com/valeoai/obsnet"
       }
   ],
   "obstacle_track": [
