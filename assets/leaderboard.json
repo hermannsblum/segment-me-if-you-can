@@ -610,6 +610,26 @@
         "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3270176186,
         "method": "RAOS (training free)",
         "requires_ood": false
+      },
+      {
+        "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.2475312023,
+        "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.3959208982,
+        "ObstacleTrack-test-PixBinaryClass-best_f1": 0.3678444186,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.2031639562,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.3981610707,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 262,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 291,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.3130434783,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 312,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 294,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.2005277045,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 359,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 300,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.0808926081,
+        "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.1998186808,
+        "method": "ObsFormer",
+        "requires_ood": false,
+        "code": "https://github.com/andresviikmaa/NortalObsFormer"
       }
   ],
   "laf_no_known": [
