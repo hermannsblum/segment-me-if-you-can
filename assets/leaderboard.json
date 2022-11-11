@@ -325,6 +325,25 @@
         "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.1132214349,
         "method": "DenseHybrid (DeepLabv3+)",
         "requires_ood": true
+      },
+      {
+        "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.8890142976,
+        "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.1142267216,
+        "AnomalyTrack-test-PixBinaryClass-best_f1": 0.8177169823,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.5044427961,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.290374065,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 66,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 554,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.3873517787,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 112,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 588,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.3,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 195,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 676,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.1333333333,
+        "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.2812335588,
+        "method": "cDNP",
+        "requires_ood": false
       }
   ],
   "obstacle_track": [
