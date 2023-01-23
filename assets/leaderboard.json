@@ -765,6 +765,26 @@
         "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.6305278174,
         "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.7557997869,
         "method": "Anonymous CVPR #9457"
+    },
+    {"ObstacleTrack-test-PixBinaryClass-area_PRC": 0.815003307,
+     "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.01125716,
+     "ObstacleTrack-test-PixBinaryClass-best_f1": 0.7588185295, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.3767663098, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.6012665871, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 156, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 124, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.623655914, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 216, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 134, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.4956772334, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 335, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 160, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1763727121, 
+     "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.4601102034, 
+     "method": "DaCUP",
+     "requires_ood": false,
+     "paper": "https://openaccess.thecvf.com/content/WACV2023/html/Vojir_Image-Consistent_Detection_of_Road_Anomalies_As_Unpredictable_Patches_WACV_2023_paper.html ",
+     "code": "https://github.com/vojirt/DaCUP"
     }
   ],
   "laf_no_known": [
@@ -1090,6 +1110,26 @@
       "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.5063659194,
       "method": "RAOS (training free)",
       "requires_ood": true
+    },
+    {"LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.813665303,
+    "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0735898878,
+     "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.7558212886, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.3834472022, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-prec_pred": 0.6729001085, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 765, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 395, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.6194225722, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 930, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 409, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.5377977218, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 1293, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 476, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.3198769704, 
+     "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.5114430838, 
+     "method": "DaCUP",
+     "requires_ood": false,
+     "paper": "https://openaccess.thecvf.com/content/WACV2023/html/Vojir_Image-Consistent_Detection_of_Road_Anomalies_As_Unpredictable_Patches_WACV_2023_paper.html ",
+     "code": "https://github.com/vojirt/DaCUP"
     }
   ]
 }
