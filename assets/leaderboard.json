@@ -383,7 +383,7 @@
         "requires_ood": false
     },
     {
-      "AnomalyT rack-test-PixBinaryClass-area_PRC": 0.861283119,
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.861283119,
       "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.1594367289,
       "AnomalyTrack-test-PixBinaryClass-best_f1": 0.7914658934,
       "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.5625931894,
