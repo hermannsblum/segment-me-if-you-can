@@ -463,6 +463,25 @@
       "paper": "https://arxiv.org/abs/2305.09610",
       "requires_ood": false,
       "code": "https://github.com/gudovskiy/flowenedet"
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.8007910188,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.0716312103,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.8197317235,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.4646161103,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.5002063347,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 104,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 131,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.5735027223,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 125,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 139,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.5092936803,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 158,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 165,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.3917137476,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.5039086835,
+      "method": "CSL",
+      "requires_ood" : false
     }
   ],
   "obstacle_track": [
@@ -984,7 +1003,8 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 202,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.3588317107,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.5101825189,
-      "method": "CSL"
+      "method": "CSL",
+      "requires_ood" : false
     },
     {
       "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7370688789,
