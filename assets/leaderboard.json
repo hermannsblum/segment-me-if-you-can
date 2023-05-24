@@ -442,7 +442,28 @@
     "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean":   0.4794691607,
     "method": "RPL+CoroCL (extra)",
     "requires_ood": true
- }
+ },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.3674426992,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.7781542275,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.3763592767,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.1546696001,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.1682584616,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 203,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 1165,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.0794078062,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 237,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 1226,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.0330469266,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 259,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 1284,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0038734668,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.0340146078,
+      "method": "FlowEneDet",
+      "paper": "https://arxiv.org/abs/2305.09610",
+      "requires_ood": false,
+      "code": "https://github.com/gudovskiy/flowenedet"
+    }
   ],
   "obstacle_track": [
     {
@@ -946,7 +967,46 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean":   0.5813476764,
     "method": "RPL+CoroCL (extra)",
     "requires_ood": true
-}
+},
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.870967452,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0066726055,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.8447139496,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4470005641,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.5312889578,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 159,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 178,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.5761006289,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 180,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 181,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.5353925354,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 259,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 202,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.3588317107,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.5101825189,
+      "method": "CSL"
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7370688789,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0097386612,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.6757190459,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4261812341,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.4225450607,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 141,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 321,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.5167364017,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 193,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 336,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.4243743199,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 297,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 359,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.2171837709,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3995515591,
+      "method": "FlowEneDet",
+      "paper": "https://arxiv.org/abs/2305.09610",
+      "requires_ood": false,
+      "code": "https://github.com/gudovskiy/flowenedet"
+    }
   ],
   "laf_no_known": [
     { 
@@ -1291,6 +1351,27 @@
      "requires_ood": false,
      "paper": "https://openaccess.thecvf.com/content/WACV2023/html/Vojir_Image-Consistent_Detection_of_Road_Anomalies_As_Unpredictable_Patches_WACV_2023_paper.html ",
      "code": "https://github.com/vojirt/DaCUP"
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.7975345103,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0292193183,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.7294508213,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.4378791187,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-prec_pred": 0.5283043136,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 591,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 712,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.6318168974,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 844,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 829,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.5083749633,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 1287,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 1051,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.2652419862,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.4804709818,
+      "method": "FlowEneDet",
+      "paper": "https://arxiv.org/abs/2305.09610",
+      "requires_ood": false,
+      "code": "https://github.com/gudovskiy/flowenedet"
     }
   ]
 }
