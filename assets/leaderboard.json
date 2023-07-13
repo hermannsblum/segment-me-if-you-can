@@ -501,6 +501,24 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.4990302041,
       "method": "Maskomaly",
       "requires_ood" : false
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.9020351942,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.0383420594,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.9089338244,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.5454905729,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.6185827364,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 80,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 76,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.7,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 94,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 80,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.6588235294,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 142,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 92,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.5063291139,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6363818342,
+      "method": "ContMAV"
     }
   ],
   "obstacle_track": [
