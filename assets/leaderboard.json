@@ -422,7 +422,9 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75":     0.1419354839,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean":   0.3016212997,
       "method": "RPL+CoroCL (main)",
-      "requires_ood": true
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2211.14512",
+      "code": "https://github.com/yyliu01/RPL"
   },
   {
     "AnomalyTrack-test-PixBinaryClass-area_PRC":        0.9077794901,
@@ -441,7 +443,9 @@
     "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75":     0.3195876289,
     "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean":   0.4794691607,
     "method": "RPL+CoroCL (extra)",
-    "requires_ood": true
+    "requires_ood": true,
+    "paper": "https://arxiv.org/abs/2211.14512",
+    "code": "https://github.com/yyliu01/RPL"
  },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.3674426992,
