@@ -1007,7 +1007,9 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75":     0.3266932271,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean":   0.566919231,
       "method": "RPL+CoroCL (main)",
-      "requires_ood": true
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2211.14512",
+      "code": "https://github.com/yyliu01/RPL"
   },
   {
       "ObstacleTrack-test-PixBinaryClass-area_PRC":         0.8860975717,
@@ -1026,7 +1028,9 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75":     0.4123159304,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean":   0.5813476764,
     "method": "RPL+CoroCL (extra)",
-    "requires_ood": true
+    "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2211.14512",
+      "code": "https://github.com/yyliu01/RPL"
 },
     {
       "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.870967452,
