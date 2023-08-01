@@ -421,32 +421,11 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75":     602,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75":     0.1419354839,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean":   0.3016212997,
-      "method": "RPL+CoroCL (main)",
+      "method": "RPL+CoroCL",
       "requires_ood": true,
       "paper": "https://arxiv.org/abs/2211.14512",
       "code": "https://github.com/yyliu01/RPL"
   },
-  {
-    "AnomalyTrack-test-PixBinaryClass-area_PRC":        0.9077794901,
-    "AnomalyTrack-test-PixBinaryClass-tpr95_fpr":       0.0622281682,
-    "AnomalyTrack-test-PixBinaryClass-best_f1":         0.8478639398,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt":   0.5047696422,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.4778907129,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25":     78,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25":     190,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25":     0.5786163522,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50":     111,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50":     198,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50":     0.4942716858,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75":     169,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75":     227,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75":     0.3195876289,
-    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean":   0.4794691607,
-    "method": "RPL+CoroCL (extra)",
-    "requires_ood": true,
-    "paper": "https://arxiv.org/abs/2211.14512",
-    "code": "https://github.com/yyliu01/RPL"
- },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.3674426992,
       "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.7781542275,
@@ -523,7 +502,28 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.5063291139,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6363818342,
       "method": "ContMAV"
-    }
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.8871688821,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.146340795,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.8134723738,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.5527613338,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.5168034946,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 77,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 237,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.5409356725,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 100,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 245,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.4843049327,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 141,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 258,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.3775351014,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.4715990395,
+      "method": "Mask2Anomaly",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2307.13316",
+      "code": "https://github.com/shyam671/Mask2Anomaly-Unmasking-Anomalies-in-Road-Scene-Segmentation"
+  }
   ],
   "obstacle_track": [
     {
@@ -1006,32 +1006,11 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75":     242,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75":     0.3266932271,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean":   0.566919231,
-      "method": "RPL+CoroCL (main)",
+      "method": "RPL+CoroCL",
       "requires_ood": true,
       "paper": "https://arxiv.org/abs/2211.14512",
       "code": "https://github.com/yyliu01/RPL"
   },
-  {
-      "ObstacleTrack-test-PixBinaryClass-area_PRC":         0.8860975717,
-      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr":        0.0040207348,
-      "ObstacleTrack-test-PixBinaryClass-best_f1":          0.8099587754,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt":   0.5400911515,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.5982926475,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25":     100,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25":     168,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25":     0.682464455,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50":     148,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50":     177,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50":     0.5962732919,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75":     234,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75":     205,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75":     0.4123159304,
-      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean":   0.5813476764,
-    "method": "RPL+CoroCL (extra)",
-    "requires_ood": true,
-      "paper": "https://arxiv.org/abs/2211.14512",
-      "code": "https://github.com/yyliu01/RPL"
-},
     {
       "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.870967452,
       "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0066726055,
@@ -1071,7 +1050,28 @@
       "paper": "https://arxiv.org/abs/2305.09610",
       "requires_ood": false,
       "code": "https://github.com/gudovskiy/flowenedet"
-    }
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.9322154613,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.001986468,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.8811769332,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.5572302415,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.754183563,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 103,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 74,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.7630522088,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 130,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 76,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.7146814404,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 222,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 101,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.506870229,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.6814616227,
+      "method": "Mask2Anomaly",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2307.13316",
+      "code": "https://github.com/shyam671/Mask2Anomaly-Unmasking-Anomalies-in-Road-Scene-Segmentation"
+  }
   ],
   "laf_no_known": [
     { 
