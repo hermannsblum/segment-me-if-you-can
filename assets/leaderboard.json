@@ -343,7 +343,9 @@
         "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.1333333333,
         "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.2812335588,
         "method": "cDNP",
-        "requires_ood": false
+        "requires_ood": false,
+        "paper": "https://arxiv.org/abs/2211.06660",
+        "code": "https://github.com/silviogalesso/dense-ood-knns"
       },
       {
         "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.9374901251,
@@ -523,7 +525,28 @@
       "requires_ood": true,
       "paper": "https://arxiv.org/abs/2307.13316",
       "code": "https://github.com/shyam671/Mask2Anomaly-Unmasking-Anomalies-in-Road-Scene-Segmentation"
-  }
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.6703530931,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.315726008,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.6454404966,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.4457639385,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.2955103532,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 81,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 787,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.2943089431,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 133,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 805,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.2157190635,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 204,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 856,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0986394558,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.206379524,
+      "method": "ATTA",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2309.05994",
+      "code": "https://github.com/gaozhitong/ATTA"
+    }
   ],
   "obstacle_track": [
     {
@@ -1071,7 +1094,28 @@
       "requires_ood": true,
       "paper": "https://arxiv.org/abs/2307.13316",
       "code": "https://github.com/shyam671/Mask2Anomaly-Unmasking-Anomalies-in-Road-Scene-Segmentation"
-  }
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7645501318,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0281154249,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.7151030266,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4392599622,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.3765727293,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 153,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 439,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.4425612053,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 193,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 445,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.3793774319,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 264,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 472,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.2520325203,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.3657204703,
+      "method": "ATTA",
+      "requires_ood": true,
+      "paper": "https://arxiv.org/abs/2309.05994",
+      "code": "https://github.com/gaozhitong/ATTA"
+    }
   ],
   "laf_no_known": [
     { 
