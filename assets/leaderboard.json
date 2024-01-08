@@ -466,7 +466,9 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.3917137476,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.5039086835,
       "method": "CSL",
-      "requires_ood" : false
+      "requires_ood" : false,
+      "code": "https://github.com/haoz19/CSL",
+      "paper": "https://arxiv.org/pdf/2312.05538.pdf"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.9334796004,
@@ -1053,7 +1055,9 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.3588317107,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.5101825189,
       "method": "CSL",
-      "requires_ood" : false
+      "requires_ood" : false,
+      "code": "https://github.com/haoz19/CSL",
+      "paper": "https://arxiv.org/pdf/2312.05538.pdf"
     },
     {
       "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7370688789,
