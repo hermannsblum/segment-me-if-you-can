@@ -588,7 +588,45 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.5887045557,
       "method": "UNO",
       "requires_ood": false
-    }
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.9293617175,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.0325254133,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.9023565812,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.71581216,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.5370600045,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 43,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 153,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.690851735,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 60,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 154,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.6537216828,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 79,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 174,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.591276252,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.653961892,
+      "method": "VLAD",
+      "requires_ood": true
+  },
+  {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.8248443369,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.8242373134,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.8528611039,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.6699495383,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.5185615011,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 57,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 168,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.6456692913,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 70,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 172,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.6134185304,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 93,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 187,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.5469255663,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6114480017,
+      "method": "VLAD",
+      "requires_ood": false
+  }
   ],
   "obstacle_track": [
     {
@@ -1197,7 +1235,45 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.7632450009,
       "method": "UNO",
       "requires_ood": false
-    }
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7870469196,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0057292063,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.743544067,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.3642432203,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.2239991327,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 205,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 721,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.2832817337,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 229,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 721,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.2507886435,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 273,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 724,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1874490628,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.2435873632,
+      "method": "VLAD",
+      "requires_ood": true
+  },
+  {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.7643055166,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0057713784,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.742049325,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4247192632,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.190486354,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 179,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 962,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.2681205901,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 201,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 962,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.2433311646,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 246,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 968,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1895861148,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.2362716925,
+      "method": "VLAD_no_language",
+      "requires_ood": false
+  }
   ],
   "laf_no_known": [
     {
