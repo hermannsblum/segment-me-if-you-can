@@ -1271,7 +1271,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 968,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.1895861148,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.2362716925,
-      "method": "VLAD_no_language",
+      "method": "VLAD",
       "requires_ood": false
   }
   ],
