@@ -626,6 +626,27 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6114480017,
       "method": "VLAD",
       "requires_ood": false
+  },
+  {
+    "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.688814207,
+    "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.5432634399,
+    "AnomalyTrack-test-PixBinaryClass-best_f1": 0.6379116369,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.4415357181,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.2431815397,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 82,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 845,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.2797202797,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 128,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 861,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.2132060461,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 216,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 934,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.0740740741,
+    "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.198189988,
+    "method": "PixOOD ",
+    "paper": "https://arxiv.org/abs/2405.19882",
+    "requires_ood": false,
+    "code": "https://github.com/vojirt/PixOOD"
   }
   ],
   "obstacle_track": [
@@ -1273,6 +1294,27 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.2362716925,
       "method": "VLAD",
       "requires_ood": false
+  },
+  {
+    "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.8889652647,
+    "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0030463339,
+    "ObstacleTrack-test-PixBinaryClass-best_f1": 0.8276172528,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4268257592,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.5748931817,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 149,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 147,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.6175710594,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 187,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 150,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.5439783491,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 286,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 182,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.3035714286,
+    "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.508156429,
+    "method": "PixOOD ",
+    "paper": "https://arxiv.org/abs/2405.19882",
+    "requires_ood": false,
+    "code": "https://github.com/vojirt/PixOOD"
   }
   ],
   "laf_no_known": [
@@ -1639,6 +1681,27 @@
       "paper": "https://arxiv.org/abs/2305.09610",
       "requires_ood": false,
       "code": "https://github.com/gudovskiy/flowenedet"
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.8507372955,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0445741852,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.809399818,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.3017807811,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-prec_pred": 0.7846559043,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 922,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 191,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.5857834016,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 1135,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 195,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 0.4632768362,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 1456,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 233,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.230523918,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.4441048078,
+      "method": "PixOOD ",
+      "paper": "https://arxiv.org/abs/2405.19882",
+      "requires_ood": false,
+      "code": "https://github.com/vojirt/PixOOD"
     }
   ]
 }
