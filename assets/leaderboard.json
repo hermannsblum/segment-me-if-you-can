@@ -568,6 +568,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.5652892562,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6260730693,
       "method": "UNO",
+      "paper": "https://arxiv.org/abs/2402.15374",
       "requires_ood": true
     },
     {
@@ -587,6 +588,7 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.5226917058,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.5887045557,
       "method": "UNO",
+      "paper": "https://arxiv.org/abs/2402.15374",
       "requires_ood": false
     },
     {
@@ -1257,6 +1259,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.6719160105,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.7764876723,
       "method": "UNO",
+      "paper": "https://arxiv.org/abs/2402.15374",
       "requires_ood": true
     },
     {
@@ -1276,6 +1279,7 @@
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.6509695291,
       "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.7632450009,
       "method": "UNO",
+      "paper": "https://arxiv.org/abs/2402.15374",
       "requires_ood": false
     },
     {
