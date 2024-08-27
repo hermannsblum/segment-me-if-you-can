@@ -507,7 +507,10 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 92,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.5063291139,
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6363818342,
-      "method": "ContMAV"
+      "method": "ContMAV",
+      "requires_ood": false,
+      "paper": "https://arxiv.org/abs/2403.07532",
+      "code": "https://github.com/PRBonn/ContMAV"
     },
     {
       "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.8871688821,
