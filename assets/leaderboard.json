@@ -673,7 +673,26 @@
       "paper": "https://arxiv.org/abs/2303.06920",
       "requires_ood": false,
       "code": "https://github.com/tobiasriedlinger/uncertainty-gradients-seg"
-    }
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.9000013727, 
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.0268072693, 
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.9059994682, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.5909548675, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.6831667896, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 66, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 69, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.7438330171, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 75, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 69, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.722007722, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 128, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 82, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.5606694561, 
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6937749339, 
+      "method": "Con2MAV",
+      "requires_ood": false
+  }
   ],
   "obstacle_track": [
     {
