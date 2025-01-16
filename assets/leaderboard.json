@@ -692,7 +692,43 @@
       "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.6937749339, 
       "method": "Con2MAV",
       "requires_ood": false
-  }
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.8732595607,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.0782561758,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.8391227648,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.4806141219,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.524087316,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 88,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 100,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.6492537313,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 102,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 110,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.6015037594,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 178,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 176,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.3218390805,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.5608690823,
+      "method": "OodDINO+RPL"
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.8563742123,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.0778719297,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.8278708539,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.4621422811,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.5523844619,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 88,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 83,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.6705202312,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 107,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 94,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.6066536204,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 200,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 181,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.2455445545,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.5489599297,
+      "method": "OodDINO+RbA"
+    }
   ],
   "obstacle_track": [
     {
@@ -1383,7 +1419,43 @@
       "paper": "https://arxiv.org/abs/2303.06920",
       "requires_ood": false,
       "code": "https://github.com/tobiasriedlinger/uncertainty-gradients-seg"
-    }
+    },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.9452459263,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0004792264,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.9052579322,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.7301283832,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.8044262943,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 16,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 5,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.9725490196,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 22,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 8,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.9606299213,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 177,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 113,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.5926966292,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.8991386407,
+      "method": "OodDINO+RbA"
+   },
+   {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.9404698436,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0005957762,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.8895773042,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.6772231816,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.8135979743,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 38,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 4,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.9433962264,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 51,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 6,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.9220246238,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 183,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 92,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.598540146,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.8652733603,
+      "method": "OodDINO+RPL"
+   }
   ],
   "laf_no_known": [
     {
