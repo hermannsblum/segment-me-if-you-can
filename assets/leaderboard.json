@@ -748,7 +748,29 @@
       "method": "FlowCLAS",
       "paper": "https://arxiv.org/abs/2411.19888",
       "requires_ood": false
-    }   
+    },
+    {
+      "AnomalyTrack-test-PixBinaryClass-area_PRC": 0.955799678,
+      "AnomalyTrack-test-PixBinaryClass-tpr95_fpr": 0.0469850784,
+      "AnomalyTrack-test-PixBinaryClass-best_f1": 0.8836866903,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-sIoU_gt": 0.5792005391,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-prec_pred": 0.4115756005,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_25": 65,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_25": 344,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_25": 0.4906600249,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_50": 86,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_50": 350,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_50": 0.4467005076,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fn_75": 140,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-fp_75": 376,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_75": 0.3210526316,
+      "AnomalyTrack-test-SegEval-AnomalyTrack-f1_mean": 0.433312934,
+      "method": "UEM",
+      "paper": "https://arxiv.org/abs/2409.06424",
+      "requires_ood": true,
+      "code": "https://github.com/NazirNayal8/UEM-likelihood-ratio"
+      
+    }
   ],
   "obstacle_track": [
     {
@@ -1495,7 +1517,28 @@
       "method": "FlowCLAS",
       "paper": "https://arxiv.org/abs/2411.19888",
       "requires_ood": false
-  }
+  },
+    {
+      "ObstacleTrack-test-PixBinaryClass-area_PRC": 0.9437575331,
+      "ObstacleTrack-test-PixBinaryClass-tpr95_fpr": 0.0010482691,
+      "ObstacleTrack-test-PixBinaryClass-best_f1": 0.8778003022,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-sIoU_gt": 0.4982515425,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-prec_pred": 0.7683598047,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_25": 114,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_25": 31,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_25": 0.7907647908,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_50": 147,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_50": 40,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_50": 0.7204783259,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fn_75": 271,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-fp_75": 104,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_75": 0.3842364532,
+      "ObstacleTrack-test-SegEval-ObstacleTrack-f1_mean": 0.6718199078,
+      "method": "UEM",
+      "paper": "https://arxiv.org/abs/2409.06424",
+      "requires_ood": true,
+      "code": "https://github.com/NazirNayal8/UEM-likelihood-ratio"
+    }
   ],
   "laf_no_known": [
     {
@@ -1882,6 +1925,27 @@
       "paper": "https://arxiv.org/abs/2405.19882",
       "requires_ood": false,
       "code": "https://github.com/vojirt/PixOOD"
+    },
+    {
+      "LostAndFound-testNoKnown-PixBinaryClass-area_PRC": 0.8104282632,
+      "LostAndFound-testNoKnown-PixBinaryClass-tpr95_fpr": 0.0144723287,
+      "LostAndFound-testNoKnown-PixBinaryClass-best_f1": 0.7381381129,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-sIoU_gt": 0.3949100949 ,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-prec_pred": 0.5576725261,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_25": 709,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_25": 709,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_25": 0.5851375073,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_50": 912,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_50": 720,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_50": 50,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fn_75": 1336,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-fp_75": 844,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_75": 0.2549555707,
+      "LostAndFound-testNoKnown-SegEval-ObstacleTrack-f1_mean": 0.4653899825,
+      "method": "UEM",
+      "paper": "https://arxiv.org/abs/2409.06424",
+      "requires_ood": true,
+      "code": "https://github.com/NazirNayal8/UEM-likelihood-ratio"
     }
   ]
 }
